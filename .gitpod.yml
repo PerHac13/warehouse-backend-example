@@ -1,0 +1,13 @@
+# .gitpod.yml
+tasks:
+  - name: "Configure and Build"
+    init: |
+      cmake -S . -B build
+    command: |
+      cmake --build build
+
+vscode:
+  extensions:
+    - ms-vscode.cpptools # C++ extension for VS Code
+    - ms-vscode.cmake-tools # CMake Tools extension
+    - ms-vscode.cmake # CMake support extension
